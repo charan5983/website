@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Open Sans, sans-serif;
+    background-image: url(images/desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+    margin-left: 25px;
+  }
+  /* Gallery container styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Gallery item styles */
+  .gallery-item {
+    margin: 10px;
+    flex-basis: 25%;
+    overflow: hidden; /* add this line to prevent image overflow */
+  }
+  .gallery-item img {
+    width: 100%; /* add this to make the image fit the container */
+    height: 80%; /* add this to make the image fit the container */
+    object-fit: cover; /* add this to maintain the image aspect ratio */
+  
+  }
+  
+  /* Hover effects */
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.2);
+  }
+  
+  
+  /* Navbar Styles */
+  
+  .navbar {
+    height: 50px; /* increased height */
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; /* changed font style */
+    font-size: 18px; /* increased font size */
+    transition: background-color 0.2s ease; /* added transition for smooth hover effect */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    color: #333; /* removed background color */
+    text-decoration: none;
+    transition: color 0.2s ease; /* added transition for smooth hover effect */
+  }
+  
+  .navbar a:hover {
+    color: #666;
+    font-size: 20px; /* increased font size on hover */
+  }
+  
+  /* Animation for pages */
+  
+  .page {
+    animation: fadeIn 0.5s ease; /* added animation for pages */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Form Styles */
+  
+  form {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.2s ease; /* added transition for smooth hover effect */
+  }
+  
+  input:hover, textarea:hover {
+    border-color: #666;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e72424;
+  }
+  
+  /* Contact Styles */
+  
+  .h2contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.2s ease; /* added transition for smooth hover effect */
+  }
+  
+  .contact-icon:hover {
+    color: #666;
+  }
+  
+  /* Icon animation */
+  
+  .contact-icon {
+    animation: iconAnimation 0.5s ease; /* added animation for icons */
+  }
+  
+  @keyframes iconAnimation {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
